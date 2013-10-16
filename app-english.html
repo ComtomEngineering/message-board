@@ -1,0 +1,18 @@
+<head>
+  <title>app-english</title>
+</head>
+
+<body>
+    <div class="container">
+     {{> hello}}
+    </div>
+</body>
+
+<template name="hello">
+  <h1>Enter your message!</h1>   
+  <textarea id="text"></textarea>
+  <a id="send" class="btn btn-primary"><i class="icon-ok icon-white"></i> Send</a>
+  {{#each messages}}
+    <div class="well">{{text}}</div>
+  {{/each}}
+</template>
